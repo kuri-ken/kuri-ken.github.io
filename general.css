@@ -1,0 +1,132 @@
+.text_header {
+  position: relative;
+  animation-name: jump_up;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  padding-top:15%;
+  text-align: center;
+  color:  white;   
+}
+
+.text_header_name {
+  position: relative;
+  animation-name: jump_up_top;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  padding-top:2%;
+  text-align: center;
+  color:  white;
+}
+
+.text_header_title {
+  position: relative;
+  animation-name: jump_up;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  padding-top:1%;
+  text-align: center;
+  color:  transparent;
+  animation-fill-mode:  forwards; 
+}
+
+.pic_fade {
+  position: relative;
+  animation-name: pic_fade_in;
+  animation-duration: 1.5s;
+  animation-delay: 2s;
+  color:transparent;
+  animation-fill-mode:  forwards; 
+  opacity: 0;
+  border-radius: 10px;
+  margin-left: 7%;
+  float: left;
+  display: block;
+  clear: auto;
+}
+
+.icon_fade {
+  position: relative;
+  animation-name: pic_fade_in;
+  animation-duration: 1.5s;
+  animation-delay: 2s;
+  color:transparent;
+  animation-fill-mode:  forwards; 
+  opacity: 0;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.sc_fade {
+  position: relative;
+  animation-name: pic_fade_in;
+  animation-duration: 1.5s;
+  animation-delay: 2s;
+  color:transparent;
+  animation-fill-mode:  forwards; 
+  opacity: 0;
+  margin-right: 7%;
+  width: 40vw;
+  height: 40vw;
+  float: right;
+  display: block;
+  clear: auto;
+}
+
+.icon_fade_container {
+  text-align: center;
+}
+
+.icon_fade {
+  display: inline-block;
+}
+
+.box {
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+
+  
+  
+  height: 40vw;
+  width: 40vw;
+  background: white;
+  border-radius: 5px;
+}
+
+.kuriken { 
+  font-family: "Brush Script MT", cursive; font-size: 5vh; font-style: normal; font-variant: normal; font-weight: 450; line-height: 51.4px; 
+}
+
+.identitycrisis {
+  font-family: perpetua, serif; font-size: 10vh; font-style: normal; font-variant: normal; font-weight: 450; line-height: 7vh;
+  padding-bottom: 5%;
+}
+
+@keyframes jump_up {
+  0%   {top: 25px; color:transparent;}
+  25%  {top:-25px;}
+  100% {top:0px; color:white;}
+}
+
+@keyframes jump_up_top {
+  0%   {top: 25px; color:transparent;}
+  25%  {top:-25px;}
+  100% {top:0px;}
+}
+
+@keyframes fade_in {
+  0%   {color:transparent;}
+  100% {color:white;}
+}
+
+@keyframes pic_fade_in {
+  0%  {opacity: 0;}
+  100% {opacity: 1;}
+}
