@@ -84,11 +84,11 @@
 }
 
 .kuriken { 
-  font-family: "Brush Script MT", cursive; font-size: 4vh; font-style: normal; font-variant: normal; font-weight: 450; line-height: px; 
+  font-family: "Brush Script MT", serif; font-size: 4vh; font-style: normal; font-variant: normal; font-weight: 450; line-height: px; 
 }
 
 .identitycrisis {
-  font-family: perpetua, serif; font-size: 7vh; font-style: normal; font-variant: normal; font-weight: 450; line-height: 1vh;
+  font-family: "Lucinda Bright", Georgia, serif; font-size: 7vh; font-style: normal; font-variant: normal; font-weight: 450; line-height: 1vh;
   padding-bottom: 5%;
 }
 
