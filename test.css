@@ -21,6 +21,7 @@
 .content_fade_container {
 	text-align: center;
 	height: 40vw;
+	margin-top: 2%;
 
 }
 
@@ -86,7 +87,7 @@
 }
 
 .identitycrisis {
-  font-family: perpetua, serif; font-size: max(60px, 10vh); font-style: normal; font-variant: normal; font-weight: 450; line-height: 6vh;
+  font-family: "Lucinda Bright", Georgia, serif; font-size: max(60px, 10vh); font-style: normal; font-variant: normal; font-weight: 450; line-height: 6vh;
   padding-bottom: 5%;
 }
 

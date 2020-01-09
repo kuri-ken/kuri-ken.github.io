@@ -8,6 +8,8 @@
   animation-fill-mode:  forwards; 
   opacity: 0;
   overflow: hidden;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .icon_fade {
@@ -64,8 +66,8 @@
   animation-name: jump_up_top;
   animation-duration: 1s;
   animation-delay: 0s;
-  padding-top:4%;
-  margin-top: 4%;
+  padding-top:3%;
+  margin-top: 2.8%;
   text-align: center;
   color:  white;
 }
