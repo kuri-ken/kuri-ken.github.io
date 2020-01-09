@@ -67,7 +67,7 @@
   animation-duration: 1s;
   animation-delay: 0s;
   padding-top:3%;
-  margin-top: 2.8%;
+  margin-top: 2.3%;
   text-align: center;
   color:  white;
 }
@@ -84,7 +84,7 @@
 }
 
 .kuriken { 
-  font-family: "Brush Script MT", serif; font-size: 4vh; font-style: normal; font-variant: normal; font-weight: 450; line-height: px; 
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 4vh; font-style: normal; font-variant: normal; font-weight: 450; line-height: px; 
 }
 
 .identitycrisis {
