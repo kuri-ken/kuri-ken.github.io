@@ -83,6 +83,17 @@
   animation-fill-mode:  forwards; 
 }
 
+.text_header_release {
+  position: relative;
+  animation-name: fade_in;
+  animation-duration: 1.5s;
+  animation-delay: 2s;
+  padding-top:1%;
+  text-align: center;
+  color:  transparent;
+  animation-fill-mode:  forwards;
+}
+
 .kuriken { 
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: 4vh; font-style: normal; font-variant: normal; font-weight: 450; line-height: px; 
 }
