@@ -1,0 +1,81 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Identity Crisis</title>
+    <link rel="stylesheet" media="all and (max-width:540px)" type="text/css" href="testmobile.css">
+    <link rel="stylesheet" media="all and (min-width:500px)" type="text/css" href="test.css">
+  </head>
+  <!-- Background color -->
+  <body style="background-color: #A43522">
+
+  <!-- jumping header -->
+
+    <div class="dropdown">
+      <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Pick Song
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <button id="thethingsilove" class="dropdown-item" type="button" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/630463590&color=%23a43522&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false">the things i love</button>
+        <button id="untappedyouth" class="dropdown-item" type="button" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/619272576&color=%23a43522&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false">untapped youth</button>
+        <button id="family" class="dropdown-item" type="button" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/724647244&color=%23a43522&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false">family</button>
+        <button id="solosolenoid" class="dropdown-item" type="button" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/742140520&color=%23a43522&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false">solo solenoid</button>
+
+
+      </div>
+    </div>
+
+    <iframe id="iframe" align="middle" width="50%" height="25%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/630463590&color=%23a43522&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false"></iframe>
+    <div>
+      <p id="lyric_change">
+        Magu the Dog – I Always Kill the Things I Love<br>      [Verse 1]<br>      Let’s go right in<br>      I’m the journeyman, fightin’ sins within’, nights will write with pens<br>      Or pencils try I might to fend off life within’ a stencil<br>      Omnipotent like a stem cell, I can do whatever I felt<br>      Is possibly in the realm of lovin’ and facin’ myself, yuh<br>      I don’t need no fuckin’ help, just need a second, to walkup to death and catch my breath<br>      The grind’s so fuckin’ pleasant, uh<br>      Rappin’is just a percentage<br>      Sappin’ the man given half of my presence<br>      Then askin’myself to react to regretting<br>      The setting in which all I know is repentance<br>      And I question the selfish tendency<br>      I tend to see, in pursuing art independently instead of placement in appendices,<br>      But I must be kidding myself, music fucking raised me, appraising it<br>      Somethin’ I never would sell, it’s principal<br>      Expression of a cyclic hell, without it, I’ll do both, I’ll do both and only time will tell, yuh<br><br>      [Hook]<br>      Let’s journey along, I’m pavin’ my way, my<br>      My body is strong, my body won’t break, yeah<br>      When every choice feels wrong, I’ll be singin’ my song, I’m keepin my faith, yea-ah<br>      Let’s journey along, I’m pavin’ my way<br>      My body is strong, my body won’t break, yeah<br>      When every choice feels wrong, I’ll be singin’ my song, I’m keepin my faith, yea-ah<br><br>      [Outro]<br>      Now I ain’t shoutin’ I’m just super Saiyan<br>      No longer doubtin’ I ain’t playin’ withthe time I got left<br>      Evaluate and take a step<br>      Stochastic gradient descent<br>      I’m the master withthese raps they gotchu sayin’ what’s next, uh<br>    
+      </p>
+    </div>
+
+
+  
+
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+      $('button').click(function() {
+          $('#iframe').attr('src', $(this).data('src'))
+      })
+    </script>
+
+    <script>
+      $("button").click(function(e){
+          var idClicked = e.target.id;
+          if (idClicked == "dropdownMenu2") {
+            return;
+          }
+          var songs = {};
+          songs['thethingsilove'] = "[Verse 1]<br>      Let’s go right in<br>      I’m the journeyman, fightin’ sins within’, nights will write with pens<br>      Or pencils try I might to fend off life within’ a stencil<br>      Omnipotent like a stem cell, I can do whatever I felt<br>      Is possibly in the realm of lovin’ and facin’ myself, yuh<br>      I don’t need no fuckin’ help, just need a second, to walkup to death and catch my breath<br>      The grind’s so fuckin’ pleasant, uh<br>      Rappin’is just a percentage<br>      Sappin’ the man given half of my presence<br>      Then askin’myself to react to regretting<br>      The setting in which all I know is repentance<br>      And I question the selfish tendency<br>      I tend to see, in pursuing art independently instead of placement in appendices,<br>      But I must be kidding myself, music fucking raised me, appraising it<br>      Somethin’ I never would sell, it’s principal<br>      Expression of a cyclic hell, without it, I’ll do both, I’ll do both and only time will tell, yuh<br><br>      [Hook]<br>      Let’s journey along, I’m pavin’ my way, my<br>      My body is strong, my body won’t break, yeah<br>      When every choice feels wrong, I’ll be singin’ my song, I’m keepin my faith, yea-ah<br>      Let’s journey along, I’m pavin’ my way<br>      My body is strong, my body won’t break, yeah<br>      When every choice feels wrong, I’ll be singin’ my song, I’m keepin my faith, yea-ah<br><br>      [Outro]<br>      Now I ain’t shoutin’ I’m just super Saiyan<br>      No longer doubtin’ I ain’t playin’ withthe time I got left<br>      Evaluate and take a step<br>      Stochastic gradient descent<br>      I’m the master withthese raps they gotchu sayin’ what’s next, uh<br> ";
+          songs['untappedyouth'] = "[Verse 1]<br>I been layin low, for the most part (18)<br>Sayin go when I don’t start, Mozart when I<br>Flow, I don’t know what stopping me<br>Top dog in the group and I mighta found the key<br>Do I turn it yet?D id I trap myself in something permanent? <br>My heart and my brain lack pertinence<br>shift my ferventness<br>Can’t explain this nervousness inside of me<br>Thoughts of pops losing pride in me,(26)<br>When I drop the scholar option will he see<br>A stupidkid discards all he says, burned the check and earned his disrespect?<br>Military man loves his fam, <br>wayward youth served an empty hand<br>Son seek truths in the promised land<br>Learnin lessons learned from Abraham (34)<br>Tired of bein the sham of a man, who<br>Talks without the walk serif sans<br>Finna pay you back and more mom and dad<br>With a frequent back-and-forth school and raps<br>NowI gotta put my plan up into action<br>Put my other shit down for my passions<br>Keep fighting make Cassius,<br>Won’t stop gotta fate to entertain the masses like<br><br>[Hook]<br>Play the beat and go<br>Im not sayin I’m a pro<br>Im below, toe-to-toe wit staying broke<br>But I gotta keep my heart<br>And playit forth<br>Play the part of what I know<br>I can be, like I did this art before, yuh<br><br>[Verse 2]<br>Did it alone I had slashed my connections<br>Failin’ so hard skatin’ past misperfections<br>Felt like I been dwellin in hell<br>Savin’ my soul up to sell,pavin’ paths to my heaven<br>Grindin’ head down into traps I was settin’<br>Ain’t findin’ myself with the lack of reflection<br>Ain’t keepin’ my cool I’m reliant on stressin’<br>Ain’t stoppin’ now pop out that anti-depressant<br>Ooh, when does it end, findin’ myself in the same place again<br>Just shove my face to the dirt and pretendin’ I’m livin’ the live that I always intended? No<br>Infinite slope at the point of inflection<br>It’ll prolly get worse before it gets better<br>Cuz change is a curse with misguided direction<br>But finding my worth is worth all of these lessons<br><br>[Outro]<br>Playin’ the beat, go stay in the heat, mosaic<br>All the feats like a pro, hey<br>Finishing touches got whole lotta nothin to show<br>I just gotta go, yuh<br>Wastin’ away my fate as a great innate player of the game, ooh<br>Feel like I been stressin supressin that part of my brain, I’m goin insane, yuh<br>Playin’ the beat, go stay in the heat, mosaic<br>All the feats like a pro, hey<br>Finishing touches got whole lotta nothin to show<br>I just gotta go, yuh<br>Strivin’ to be worthwhile in my dreams whole time been asleep, been no use, no<br>Nappin till now, find out all my truths, and tap into the fountain of youth, yuh";
+          songs['family'] = "Backpack strapped, and a voice to sing<br>Say don’t worry to whatever life brings <br>and appreciate the little things<br>hope u preciate thelittle things<br><br>Like calls from mom and pops to see how you doin’<br>They say “I hope u been gettin’ sleep with all these dreams you pursuin”<br>Introducin’ my newest nuisance, refusal to break the mold<br>Just do shit and speak yo truths if they feel it then take their souls<br>On a trip thru your psyche and just how wondrous your life be<br>Despite a dip inemotion, notin’ how dope it just might be<br>Nope I’m fighting these thoughts in writing, gale call me knighting,<br>Fail to see my mighty wales, ready for wind in my sails<br><br>Feelin’ down but it’ll be alright<br>Livin’ life like it’s the last time<br>Here and now is the place you’ll find<br>A little somethin’ to escape yo mind<br><br>She pull me in wit her feminine mystique<br>Her lips refreshin’and sweet,like iced tea<br>Takin’ a drink up in my daydreams(takin a sip?)<br>Wouldn’t think to trade these little things, no<br>No no no no<br><br>It’s been nice to knowthese little things<br>Even when I’m all alone, no one ring my phone,tryna find the zone, grindin’ fingers to the bone,<br>Find Ilinger on my own yeah<br>Sacrifice my ownto live my dream<br><br>I find my life be movingbyfaster and faster, increasethe raster,<br>Line by line it’s like I’m writing towards impending disaster, defending my answers,<br>Or choices, appoint my time to devoiding my day to day from day ones, is that the price to pay forward?<br>Not sure of, my locus, get out my mind and stay focused,<br>On the moment, the road trips, no service and phones, its<br>Just us and trust we’ve known since, moms’ and pops’ devotion,<br>Family what is this notion, family, am I still homesick?<br><br>I love y’all<br><br>Backpack strapped, and a voice to sing<br>Say don’t worry to whatever life brings<br>and appreciate the little things<br>hope u preciate the little things<br><br>Whatever happens, through the low self-esteem<br>When life be knockin’ you off, of your feet,   <br>We always got our friends and family,<br>And if notwe got they memories, no";
+          songs['solosolenoid'] = "emotionally";
+          document.getElementById('lyric_change').innerHTML = songs[idClicked];
+      });
+    </script>
+
+
+  </body>
+</html>
+
+
+
+
+

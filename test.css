@@ -82,13 +82,23 @@
   animation-fill-mode:  forwards; 
 }
 
+.text_header_release {
+  position: relative;
+  animation-name: fade_in;
+  animation-duration: 1.5s;
+  animation-delay: 2s;
+  padding-top:1%;
+  text-align: center;
+  color:  transparent;
+  animation-fill-mode:  forwards;
+}
+
 .kuriken { 
-  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; font-size: max(40px, 6vh); font-style: normal; font-variant: normal; font-weight: 100; line-height: 51.4px; 
+  font-family: "Lucinda Bright", Georgia, serif; font-size: max(40px, 6vh); font-style: normal; font-variant: normal; font-weight: 100; line-height: 51.4px; 
 }
 
 .identitycrisis {
   font-family: "Lucinda Bright", Georgia, serif; font-size: max(60px, 10vh); font-style: normal; font-variant: normal; font-weight: 450; line-height: 6vh;
-  padding-bottom: 5%;
 }
 
 @keyframes jump_up {
